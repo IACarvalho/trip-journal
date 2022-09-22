@@ -9,7 +9,7 @@ export default function HeaderBar() {
       <div className={styles.navigation}>
         <Link to='/articles' className={styles.navItem}>Artigos</Link>
         <span className={styles.navItem}>Sobre</span>
-        <span className={styles.navItem}>Contato</span>
+        <Link to="/contacts" className={styles.navItem}>Contato</Link>
       </div>
     </div>
   )

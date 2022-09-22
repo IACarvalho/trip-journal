@@ -1,0 +1,44 @@
+.container {
+  maximum-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  background-color: var(--background);
+  opacity: 100%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 10px;
+}
+
+.itemList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 0 2rem 2rem;
+  font-size: 1.2rem;
+  color: var(--text);
+  padding: 1rem;
+}
+
+.itemList:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 15px 0 0 15px;
+}
