@@ -90,3 +90,5 @@ meter {
 :where([draggable="true"]) {
   -webkit-user-drag: element;
 }
+
+/* Based on https://elad2412.github.io/the-new-css-reset/ */

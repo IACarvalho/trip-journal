@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Articles from "./pages/Articles";
 
 import Home from './pages/Home'
 
@@ -12,6 +13,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={ <Home />}/>
+        <Route path="/articles" element={ <Articles /> }/>
       </Routes>
     </Router>
   )

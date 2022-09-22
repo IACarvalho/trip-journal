@@ -7,7 +7,7 @@ export default function HeaderBar() {
     <div className={styles.container}>
       <Link to="/" className={styles.title}><GlobeHemisphereWest size={40} /> Trip Journal</Link>
       <div className={styles.navigation}>
-        <span className={styles.navItem}>Artigos</span>
+        <Link to='/articles' className={styles.navItem}>Artigos</Link>
         <span className={styles.navItem}>Sobre</span>
         <span className={styles.navItem}>Contato</span>
       </div>
