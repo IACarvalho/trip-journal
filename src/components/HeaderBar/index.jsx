@@ -1,16 +1,27 @@
 import { Link } from 'react-router-dom'
 import { GlobeHemisphereWest } from 'phosphor-react'
-import styles from './HeaderBar.module.css'
 
 export default function HeaderBar() {
   return (
-    <div className={styles.container}>
-      <Link to="/" className={styles.title}><GlobeHemisphereWest size={40} /> Trip Journal</Link>
-      <div className={styles.navigation}>
-        <Link to='/articles' className={styles.navItem}>Artigos</Link>
-        <span className={styles.navItem}>Sobre</span>
-        <Link to="/contacts" className={styles.navItem}>Contato</Link>
+    <nav class="navbar navbar-expand-lg" style={{
+      background: 'var(--primary)',
+    }}>
+      <div class="container-fluid">
+        <Link class="navbar-brand text-light" to="/">
+          <GlobeHemisphereWest size={32} /> Trip Journal
+        </Link>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <Link class="nav-link text-light" to="/">Home</Link>
+            <Link class="nav-link text-light" to="/articles">Artigos</Link>
+            <Link class="nav-link text-light" to="#">Projetos</Link>
+            <Link class="nav-link text-light" to="/contacts">Contatos</Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   )
 }
