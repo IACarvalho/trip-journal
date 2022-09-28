@@ -1,8 +1,40 @@
-.container {
+.article {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin-left: -2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.techs {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  height: 100%;
-  background-color: var(--background);
-  opacity: 100%;
+}
+
+.techs span {
+  margin: 1rem 0;
+}
+
+.techs a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.techs a:hover {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  border-radius: 15px;
+  padding: 0.5rem;
 }
