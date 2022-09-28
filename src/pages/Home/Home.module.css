@@ -38,3 +38,8 @@
   border-radius: 15px;
   padding: 0.5rem;
 }
+
+.githubPlugin {
+  position: absolute;
+  bottom: 2rem;
+}
